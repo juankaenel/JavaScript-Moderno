@@ -12,9 +12,20 @@ class Cliente{
         this.nombre= nombre;
         this.saldo = saldo;
     }
+    //Métodos
+    mostrarInformacion(){
+        return `Cliente: ${this.nombre}, tu saldo es de ${this.saldo}`;
+    }
+    //Método estático
+    static bienvenida(){ //para mostrarlas no requieren una instancia
+        return `Bienvenido al cajero`;
+    }
+
 }
 const juan = new Cliente('Juan',400);
 console.log(juan);
+console.log(juan.mostrarInformacion());
+console.log(Cliente.bienvenida()); //los métodos estáticos no requieren una instancia
 
 //Class expression
 const Cliente2 = class {
