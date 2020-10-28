@@ -1,4 +1,4 @@
-const carritoCompra = [
+const carrito = [
     { nombre: 'Monitor 20 Pulgadas', precio: 500},
     { nombre: 'Televisión 50 Pulgadas', precio: 700},
     { nombre: 'Tablet', precio: 300},
@@ -8,3 +8,10 @@ const carritoCompra = [
     { nombre: 'Bocinas', precio: 300},
     { nombre: 'Laptop', precio: 800},
 ];
+
+const obtenerNombres = p => p.nombre;
+
+
+const resultado = carrito.map(obtenerNombres);
+console.log(resultado);
+console.log(carrito);
